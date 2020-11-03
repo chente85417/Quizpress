@@ -1,0 +1,185 @@
+/*MOBILE FIRST*/
+main{
+    background-image: url("../assets/badges.jpg");
+    background-size: 40%;
+    background-attachment: fixed;
+}
+#quiz{
+    display: flex;
+    flex-wrap: wrap;
+}
+#titlesContainer{
+    width: 100%;
+    background-color: white;
+}
+h1{
+    width: 90%;
+    padding-left: .5em;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+}
+h2{
+    width: 90%;
+    padding-left: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+}
+input[type="radio"]{
+    display: none;
+    width: 100%;
+}
+#submitContainer{
+    width: 100%;
+    margin: 1.2em auto;
+    text-align: center;
+}
+input[type="submit"]{
+    height: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+label{
+    width: 100%;
+    padding: 0.3em;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+.selected{
+    font-weight: bold;
+    border: 3px solid;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .3em;
+}
+.titleData{
+    width: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+.question{
+    margin: 1.2em 0%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+}
+.option{
+    width: 100%;
+    margin-bottom: .3em;
+    padding: 0.1em 0.5em;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*FORMATO TABLET*/
+@media only screen and (min-width: 768px){
+    main{
+        background-image: url("../assets/badges.jpg");
+        background-size: 40%;
+    }
+    #quiz{
+        justify-content: space-around;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .question{
+        width: 45%;
+        margin-bottom: 0%;
+        border: 1px solid gray;
+        background-color: #ffffff;
+    }
+    .title{
+        height: 4em;
+        margin-top: .5em;
+    }
+    .option{
+        height: 2.5em;
+        margin-bottom: 1.8em;
+    }
+    label{
+        height: 2.5em;
+    }
+    input[type="submit"]{
+        width: 25%;
+        height: 2em;
+        font-size: 1.4em;
+    }
+    .selected{
+        font-weight: bold;
+        border: 3px solid;
+        box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+/*FORMATO LAPTOP-DESKTOP*/
+@media only screen and (min-width: 1366px){
+    main{
+        background-image: url("../assets/badges.jpg");
+    }
+    #quiz{
+        width: 70%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    h1{
+        padding-left: 1em;
+        background-color: white;
+        font-size: 2.5em;
+    }
+    h2{
+        padding-left: 2em;
+        background-color: white;
+        font-size: 2em;
+    }
+    .question{
+        width: 49%;
+        margin-bottom: 0%;
+        border: 2px solid gray;
+    }
+    .title{
+        width: 85%;
+        height: 6em;
+        margin: auto;
+        align-content: center;
+    }
+    .options{
+        width: 90%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .option{
+        width: 45%;
+        height: 6em;
+        margin-top: .3em;
+    }
+    label, .titleData{
+        font-size: 1.4em;
+    }
+    label{
+        height: 4em;
+    }
+    input[type="submit"]{
+        width: 15%;
+        height: 3em;
+        font-size: 1.4em;
+    }
+    .selected{
+        font-weight: bold;
+        border: 3px solid;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+}

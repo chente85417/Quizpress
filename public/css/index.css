@@ -1,0 +1,269 @@
+/*MOBILE FIRST*/
+body{
+    margin: 0%;
+}
+main{
+    height: 568px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main img{
+    height: 320px;
+}
+#buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main button{
+    width: 100%;
+    height: 3.5em;
+    background-color: #00f5d4ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+#edit{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    margin-top: 4%;
+    top: -600px;
+}
+#q{
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: auto;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
+}
+#contPreg{
+    width: 100%;
+    margin-top: .7em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#textoPregunta{
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+#op{
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#opciones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-bottom: 1em;
+    font-size: .7em;
+}
+#contOptions{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+.contOption{
+    width: 100%;
+    margin: .5em 0%;
+}
+#opciones input[type=radio]{
+    width: 5%;
+}
+#opciones input{
+    width: 85%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+#submitContainer{
+    margin: auto;
+    text-align: center;
+}
+#submitContainer input{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    margin-top: 0%;
+}
+#loginContainer{
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+.editElements{
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: .5em auto;
+}
+.editElements input{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    width: 100%;
+}
+.editElements label{
+    margin-bottom: .3em;
+}
+#loginContainer input[type=submit]{
+    display: flex;
+    width: 30%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    border-radius: 6px;
+    margin: .5em auto;
+    height: 6vh;
+}
+#messageBox{
+    position: absolute;
+    top: 250px;
+    left: 20%;
+    padding: 1em;
+    background-color: whitesmoke;
+    color: crimson;
+    box-shadow: 5px 5px 24px -7px #000000;
+}
+.unvisible{
+    visibility: hidden;
+}
+@keyframes movForm{
+    to{
+        top: 30px;
+    }
+}
+.movFormNewQuestion{
+    animation: movForm .5s cubic-bezier(0,.73,0,1.55) .5s;
+    animation-fill-mode: forwards;
+}
+/*FORMATO TABLET*/
+@media only screen and (min-width: 768px){
+    main{
+        height: 1024px;
+    }
+    main img{
+        height: 768px;
+    }
+    main button{
+        height: 3em;
+        font-size: 2.5em;
+        padding-bottom: 0%;
+    }
+    #edit{
+        top: -600px;
+    }
+    #q{
+        width: 80%;
+        border-radius: 20px;
+        border: 1px solid;
+        box-shadow: 5px 5px 24px -7px #000000;
+    }
+    #textoPregunta{
+        width: 90%;
+        font-size: .8em;
+    }
+    #opciones{
+        width: 90%;
+    }
+    #opciones input{
+        width: 90%;
+    }
+    #submitContainer{
+        width: 20%;
+        margin-top: 1em;
+    }
+    #submitContainer input{
+        font-size: 1.2em;
+        height: 2em;
+    }
+    #loginContainer{
+        position: absolute;
+        top: 60vh;
+        height: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.5em;
+    }
+    .editElements{
+        height: 50%;
+        width: 80%;
+        margin-top: .5em;
+    }
+    .editElements label{
+        height: 30%;
+    }
+    #loginContainer input[type=submit]{
+        height: 5vh;
+        margin-top: 1em;
+    }
+    #messageBox{
+        top: -100px;
+        left: 32%;
+    }
+    @keyframes movForm{
+        to{
+            top: 150px;
+        }
+    }
+}
+/*FORMATO LAPTOP-DESKTOP*/
+@media only screen and (min-width: 1366px){
+    main{
+        height: 966px;
+        background-image: url(../assets/badges.jpg);
+        background-position: center;
+        background-repeat: repeat;
+    }
+    main img{
+        width: 0%;
+    }
+    main button{
+        height: 2em;
+        font-size: 2.5em;
+        padding-bottom: 0%;
+    }
+    #edit{
+        top: -800px;
+    }
+    @keyframes movForm{
+        to{
+            top: 100px;
+        }
+    }
+    #q{
+        width: 70%;
+    }
+    #textoPregunta{
+        width: 93%;
+        font-size: 1em;
+    }
+    #op{
+        margin-bottom: 1em;
+    }
+    #opciones{
+        width: 91%;
+    }
+    #loginContainer{
+        top: 50vh;
+        width: 40%;
+        margin-left: 30%;
+    }
+    .editElements{
+        width: 100%;
+    }
+    #messageBox{
+        top: -150px;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Template</title>
+
+    <meta name="author" content="TheBridge">
+    <meta name="description" content="Plantilla simple HTML5">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./js/global.js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/edit.js"></script>
+</head>
+<body>
+    <main>
+        <img src="./assets/images.png" alt="Logo de la noche de Quiz!!">
+        <form id="edit" name="edit" action="" method="POST">
+            <div id="q" class="question">
+                <div id="contPreg">
+                    <label for="textoPregunta">Pregunta</label>
+                    <textarea   id="textoPregunta"
+                                name="textoPregunta"
+                                placeholder="Texto de la pregunta"
+                                tabindex="1"
+                                autofocus
+                                required
+                                rows="4"
+                                cols="50">
+                    </textarea>
+                </div>
+                <div id="op">
+                    <fieldset id="opciones">
+                        <legend class="">Posibles opciones:</legend>
+                        <div id="contOptions">
+                            <div class="contOption">
+                                <input  type="radio"
+                                        id="radioption1"
+                                        name="option"
+                                        value="1"
+                                        tabindex="6"
+                                        required>
+                                <input  type="text"
+                                        name="option1"
+                                        id="option1"
+                                        placeholder="Opción 1"
+                                        tabindex="2"
+                                        autofocus
+                                        required>
+                            </div>
+                            <div class="contOption">
+                                <input  type="radio"
+                                        id="radioption2"
+                                        name="option"
+                                        value="2"
+                                        tabindex="7">
+                                <input  type="text"
+                                        name="option2"
+                                        id="option2"
+                                        placeholder="Opción 2"
+                                        tabindex="3"
+                                        autofocus
+                                        required>
+                            </div>
+                            <div class="contOption">
+                                <input  type="radio"
+                                        id="radioption3"
+                                        name="option"
+                                        value="3"
+                                        tabindex="8">
+                                <input  type="text"
+                                        name="option3"
+                                        id="option3"
+                                        placeholder="Opción 3"
+                                        tabindex="4"
+                                        autofocus
+                                        required>
+                            </div>
+                            <div class="contOption">
+                                <input  type="radio"
+                                        id="radioption4"
+                                        name="option"
+                                        value="4"
+                                        tabindex="9">
+                                <input  type="text"
+                                        name="option4"
+                                        id="option4"
+                                        placeholder="Opción 4"
+                                        tabindex="5"
+                                        autofocus
+                                        required>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div id="submitContainer">
+                <input type="submit" value="Añadir pregunta">
+            </div>
+        </form>
+        <form action="" id="loginContainer">
+            <div class="editElements">
+                <label for="userQuiz">Usuario:</label>
+                <input  type="email"
+                        name="userQuiz"
+                        id="userQuiz"
+                        placeholder="Usuario"
+                        tabindex="1"
+                        autofocus
+                        required>
+            </div>
+            <div class="editElements">
+                <label for="claveQuiz">Clave:</label>
+                <input  type="password"
+                        name="claveQuiz"
+                        id="claveQuiz"
+                        placeholder="Clave"
+                        tabindex="2"
+                        autofocus
+                        required>
+            </div>
+            <input type="submit" value="Editar" tabindex="3">
+        </form>
+        <div id="buttonContainer">
+            <button type="button">¿Te atreves?</button>
+        </div>
+    </main>
+</body>
+</html>

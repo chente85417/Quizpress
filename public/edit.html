@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert new question</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <script defer src="./js/edit.js"></script>
+</head>
+<body>
+    <main>
+        <form id="edit" name="edit" action="" method="POST">
+            <div id="q" class="question">
+                <div>
+                    <label for="textoPregunta">Pregunta:</label>
+                    <input  type="text"
+                            name="textoPregunta"
+                            id="textoPregunta"
+                            placeholder="Texto de la pregunta"
+                            tabindex="1"
+                            autofocus
+                            required>
+                </div>
+                <div>
+                    <fieldset id="opciones">
+                        <legend class="">Posibles opciones:</legend>
+                        <input  type="text"
+                            name="option1"
+                            id="option1"
+                            placeholder="Opción 1"
+                            tabindex="2"
+                            autofocus
+                            required>
+                        <input  type="text"
+                            name="option2"
+                            id="option2"
+                            placeholder="Opción 2"
+                            tabindex="3"
+                            autofocus
+                            required>
+                        <input  type="text"
+                            name="option3"
+                            id="option3"
+                            placeholder="Opción 3"
+                            tabindex="4"
+                            autofocus
+                            required>
+                        <input  type="text"
+                            name="option4"
+                            id="option4"
+                            placeholder="Opción 4"
+                            tabindex="5"
+                            autofocus
+                            required>
+                        <div>
+                            <label for="radioption1">Opción 1</label>
+                            <input  type="radio"
+                                    id="radioption1"
+                                    name="option"
+                                    value="1"
+                                    tabindex="6"
+                                    required>
+                            <label for="radioption2">Opción 2</label>
+                            <input  type="radio"
+                                    id="radioption2"
+                                    name="option"
+                                    value="2"
+                                    tabindex="7">
+                            <label for="radioption3">Opción 3</label>
+                            <input  type="radio"
+                                    id="radioption3"
+                                    name="option"
+                                    value="3"
+                                    tabindex="8">
+                            <label for="radioption4">Opción 4</label>
+                            <input  type="radio"
+                                    id="radioption4"
+                                    name="option"
+                                    value="4"
+                                    tabindex="9">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div id="submitContainer">
+                <input type="submit" value="Añadir pregunta">
+            </div>
+        </form>
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    <script src="./js/init-firebase.js"></script>
+</body>
+</html>
